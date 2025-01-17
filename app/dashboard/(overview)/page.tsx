@@ -11,6 +11,8 @@ import {
 import { Suspense } from "react";
 import CardWrapper from "@/app/ui/dashboard/cards";
 
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
   console.log("Rendering dashboard page at:", new Date());
 
