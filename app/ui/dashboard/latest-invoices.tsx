@@ -7,6 +7,7 @@ import { fetchLatestInvoices } from "@/app/lib/data";
 
 export default async function LatestInvoices() {
   const latestInvoices = await fetchLatestInvoices();
+  latestInvoices.sort(() => Math.random() - 0.5);
 
   return (
     <div className="flex w-full flex-col md:col-span-4">
